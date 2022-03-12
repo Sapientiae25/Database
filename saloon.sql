@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Mar 11, 2022 at 06:30 PM
+-- Generation Time: Mar 12, 2022 at 12:14 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.3.28
 
@@ -440,34 +440,9 @@ INSERT INTO `users` (`user_id`, `email`, `password`, `number`, `gender`) VALUES
 CREATE TABLE `viewed` (
   `view_id` int(11) NOT NULL,
   `style_fk` int(11) NOT NULL,
-  `user_fk` int(11) NOT NULL
+  `user_fk` int(11) NOT NULL,
+  `view_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `viewed`
---
-
-INSERT INTO `viewed` (`view_id`, `style_fk`, `user_fk`) VALUES
-(1, 23, 4),
-(2, 23, 4),
-(3, 23, 4),
-(4, 23, 4),
-(5, 23, 4),
-(6, 23, 4),
-(7, 23, 4),
-(8, 23, 4),
-(9, 23, 4),
-(10, 23, 4),
-(11, 23, 4),
-(12, 23, 4),
-(13, 23, 4),
-(14, 23, 4),
-(15, 23, 4),
-(16, 23, 4),
-(17, 23, 4),
-(18, 23, 4),
-(19, 23, 4),
-(20, 23, 4);
 
 --
 -- Indexes for dumped tables
